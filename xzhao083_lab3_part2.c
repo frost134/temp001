@@ -1,6 +1,6 @@
 /*	Partner(s) Name & E-mail:
  *  Xuanpeng Zhao & xuanpengzhao97@gmail.com
- *  Shuang Wu & frost134@live.com
+ *  Shuang Wu & frost134@live.co
  *	Lab Section: 022 
  *	Assignment: Lab 3  Exercise 2
  *	Exercise Description: 
