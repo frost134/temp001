@@ -55,7 +55,7 @@ void Tick()
 						else state = R_Y;
 						break;
 		case R_hashtag:	if (GetBit(PINA, 0)) state = P_X;
-						else if (GetBit(PINA, 1)) state = P_X;
+						else if (GetBit(PINA, 1)) state = P_Y;
 						else if (GetBit(PINA, 2)) state = P_hashtag;
 						else if (GetBit(PINA, 7)) state = LOCK_R_hashtag;
 						else state = R_hashtag;
