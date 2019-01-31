@@ -6,7 +6,7 @@
 
  *	Lab Section: 022 
 
- *	Assignment: Lab 4  Exercise 2
+ *	Assignment: Lab 6  Exercise 2
 
  *	Exercise Description: 
 
@@ -40,7 +40,6 @@ void TimerISR() {
 	TimerFlag = 1;
 }
 
-// In our approach, the C programmer does not touch this ISR, but rather TimerISR()
 ISR(TIMER1_COMPA_vect) {
 	// CPU automatically calls when TCNT1 == OCR1 (every 1 ms per TimerOn settings)
 	_avr_timer_cntcurr--; // Count down to 0 rather than up to TOP
@@ -72,7 +71,7 @@ void main()
 		PORTB = tmpB;
 		
 		while (!TimerFlag);    // Wait 1 sec
-		while(!(PINA&0x01));
+		while(!(PINA&0x01)){TimerFlag = 1;};
 		TimerFlag = 0;
 		
 	}
