@@ -31,7 +31,7 @@ void set_PWM(double frequency) {
 		
 		// set OCR3A based on desired frequency
 		else { OCR0A = (short)(8000000 / (128 * frequency)) - 1; }
-
+		// 8000000 is the system clock
 		TCNT0 = 0; // resets counter
 		current_frequency = frequency; // Updates the current frequency
 	}
